@@ -12,7 +12,7 @@ Angularjs project
 ## How to start the dev mode
 - `grunt serve`
 
-## How to ru the test
+## How to run the test
  - end to end tests
   - start the webdriver: `webdriver-manager start`
   - start the application: `grunt serve`
