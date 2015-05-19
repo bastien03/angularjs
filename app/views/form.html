@@ -1,0 +1,17 @@
+<form name="bookForm" id="bookForm">
+
+  <!-- <fieldset ng-class="{ 'has-error': bookForm.inputTitle.$invalid }"> -->
+  <fieldset show-errors>
+    <label for="inputTitle">Title*</label>
+    <input type="text" class="form-control" name="inputTitle" id="inputTitle"
+           placeholder="Enter title" ng-minlength="2" ng-model="title"
+           required>
+  </fieldset>
+
+  <br/>
+
+  <input type="submit" ng-click="submit();"
+          class="btn btn-default btn-lg"
+          ng-bind="submitButton" ng-disabled="!bookForm.$valid"></input>
+
+</form>
